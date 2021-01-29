@@ -1,0 +1,11 @@
+{
+  "name": "image-filtering-app",
+  "version": "1.0.0",
+  "description": "A cool image filter app built with caman js\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[\u001b[\u001b[3~\u001b[C\u001b[Cjs\u001b[D\u001b[DJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shawn Kebel",
+  "license": "ISC"
+}
