@@ -140,6 +140,48 @@ uploadFile.addEventListener('change', (e) => {
             canvas.height = img.height;
             ctx.drawImage(img, 0, 0, img.width, img.height);
             canvas.removeAttribute('data-caman-id');
-        }
+        };
     }, false);
 });
+
+// Download Event
+downloadBtn.addEventListener('click', () => {
+    //Get File Extension
+    const fileExtension = fileName.slice(-4);
+
+    // Initialize New Filename Extension
+    let newFileName;
+
+    // Check image Type
+    if (fileExtension === '.jpg' || fileExtension === '.png') {
+        newFileName = fileName.substring(0, fileName.length - 4) + '-edited.jpg';
+    }
+
+    // Call Download
+    download(canvas, newFileName);
+});
+
+// Download Function
+function download(canvas, fileName) {
+    // Initialize Event
+    let e;
+    // Create Link
+    const link = document.createElement('a');
+
+    // Set Properties
+    link.download = fileName;
+    link.href = canvas.toDataURL('image/jpeg', 0.8);
+    //Create New Mouse Event
+    e = new MouseEvent('click');
+    // Dispatch Event
+    link.dispatchEvent(e);
+}
+
+
+
+
+
+
+
+
+
