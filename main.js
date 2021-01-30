@@ -8,6 +8,107 @@ const downloadBtn = document.getElementById('download-btn');
 const uploadFile = document.getElementById('upload-file');
 const revertBtn = document.getElementById('revert-btn');
 
+// Add Filters and Effects
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('filter-btn')) {
+
+        // Image Filters
+        if (e.target.classList.contains('brightness-add')) {
+            Caman('#canvas', img, function () {
+                this.brightness(2).render();
+            });
+        } else if (e.target.classList.contains('brightness-remove')) {
+            Caman('#canvas', img, function () {
+                this.brightness(-2).render();
+            });
+        } else if (e.target.classList.contains('contrast-add')) {
+            Caman('#canvas', img, function () {
+                this.contrast(2).render();
+            });
+        } else if (e.target.classList.contains('contrast-remove')) {
+            Caman('#canvas', img, function () {
+                this.contrast(-2).render();
+            });
+        } else if (e.target.classList.contains('saturation-add')) {
+            Caman('#canvas', img, function () {
+                this.saturation(10).render();
+            });
+        } else if (e.target.classList.contains('saturation-remove')) {
+            Caman('#canvas', img, function () {
+                this.saturation(-10).render();
+            });
+        } else if (e.target.classList.contains('vibrance-add')) {
+            Caman('#canvas', img, function () {
+                this.vibrance(10).render();
+            });
+        } else if (e.target.classList.contains('vibrance-remove')) {
+            Caman('#canvas', img, function () {
+                this.vibrance(-10).render();
+            });
+        } else if (e.target.classList.contains('exposure-add')) {
+            Caman('#canvas', img, function () {
+                this.exposure(5).render();
+            });
+        } else if (e.target.classList.contains('exposure-remove')) {
+            Caman('#canvas', img, function () {
+                this.exposure(-5).render();
+            });
+        } else if (e.target.classList.contains('sepia-add')) {
+            Caman('#canvas', img, function () {
+                this.sepia(10).render();
+            });
+        } else if (e.target.classList.contains('sepia-remove')) {
+            Caman('#canvas', img, function () {
+                this.sepia(-10).render();
+            });
+        } else if (e.target.classList.contains('invert-add')) {
+            Caman('#canvas', img, function () {
+                this.invert().render();
+            });
+        } else if (e.target.classList.contains('greyscale-add')) {
+            Caman('#canvas', img, function () {
+                this.greyscale().render();
+            });
+
+        // Image Effects
+        } else if (e.target.classList.contains('vintage-add')) {
+            Caman('#canvas', img, function () {
+                this.vintage().render();
+            });
+        } else if (e.target.classList.contains('lomo-add')) {
+            Caman('#canvas', img, function () {
+                this.lomo().render();
+            });
+        } else if (e.target.classList.contains('clarity-add')) {
+            Caman('#canvas', img, function () {
+                this.clarity().render();
+            });
+        } else if (e.target.classList.contains('sincity-add')) {
+            Caman('#canvas', img, function () {
+                this.sinCity().render();
+            });
+        } else if (e.target.classList.contains('crossprocess-add')) {
+            Caman('#canvas', img, function () {
+                this.crossProcess().render();
+            });
+        } else if (e.target.classList.contains('pinhole-add')) {
+            Caman('#canvas', img, function () {
+                this.pinhole().render();
+            });
+        } else if (e.target.classList.contains('nostalgia-add')) {
+            Caman('#canvas', img, function () {
+                this.nostalgia().render();
+            });
+        } else if (e.target.classList.contains('hermajesty-add')) {
+            Caman('#canvas', img, function () {
+                this.herMajesty().render();
+            });
+        }
+    }
+});
+
+
+
 // Upload File
 uploadFile.addEventListener('change', (e) => {
     // Get File

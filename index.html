@@ -10,7 +10,7 @@
         <title>Photo-fx</title>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-info mb-5">
+        <nav class="navbar navbar-dark navbar bg-info mb-5">
             <div class="container">
                 <a href="#" class="navbar-brand">Photo-fx</a>
             </div>
@@ -28,35 +28,69 @@
                    <h4 class="text-center my-3">Filters</h4>
 
                     <div class="row text-center my-4">
-                        <div class="col-md-3">
-                            <div class="btn-group btn-group-sm">
-                                <button class="filter-btn brightness-remove btn btn-info">-</button>
+                        <div class="col-md-4">
+                            <div class="btn-group btn-group-sm btn-block">
+                                <button class="filter-btn brightness-remove btn btn-warning">-</button>
                                 <button class="btn btn-secondary btn-disabled" disabled>Brightness</button>
-                                <button class="filter-btn brightness-add btn btn-info">+</button>
+                                <button class="filter-btn brightness-add btn btn-warning">+</button>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="btn-group btn-group-sm">
-                                <button class="filter-btn vibrance-remove btn btn-info">-</button>
-                                <button class="btn btn-secondary btn-disabled" disabled>Vibrance</button>
-                                <button class="filter-btn vibrance-add btn btn-info">+</button>
+                        <div class="col-md-4">
+                            <div class="btn-group btn-group-sm btn-block">
+                                <button class="filter-btn contrast-remove btn btn-warning">-</button>
+                                <button class="btn btn-secondary btn-disabled" disabled>Contrast</button>
+                                <button class="filter-btn contrast-add btn btn-warning">+</button>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="btn-group btn-group-sm">
-                                <button class="filter-btn Saturation-remove btn btn-info">-</button>
+                        <div class="col-md-4">
+                            <div class="btn-group btn-group-sm btn-block">
+                                <button class="filter-btn saturation-remove btn btn-warning">-</button>
                                 <button class="btn btn-secondary btn-disabled" disabled>Saturation</button>
-                                <button class="filter-btn Saturation-add btn btn-info">+</button>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="btn-group btn-group-sm">
-                                <button class="filter-btn brightness-remove btn btn-info">-</button>
-                                <button class="btn btn-secondary btn-disabled" disabled>Brightness</button>
-                                <button class="filter-btn brightness-add btn btn-info">+</button>
+                                <button class="filter-btn saturation-add btn btn-warning">+</button>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row text-center my-4">
+                        <div class="col-md-4">
+                            <div class="btn-group btn-group-sm btn-block">
+                                <button class="filter-btn vibrance-remove btn btn-warning">-</button>
+                                <button class="btn btn-secondary btn-disabled" disabled>Vibrance</button>
+                                <button class="filter-btn vibrance-add btn btn-warning">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="btn-group btn-group-sm btn-block">
+                                <button class="filter-btn exposure-remove btn btn-warning">-</button>
+                                <button class="btn btn-secondary btn-disabled" disabled>Exposure</button>
+                                <button class="filter-btn exposure-add btn btn-warning">+</button>
+                            </div>
+                        </div><div class="col-md-4">
+                            <div class="btn-group btn-group-sm btn-block">
+                                <button class="filter-btn sepia-remove btn btn-warning">-</button>
+                                <button class="btn btn-secondary btn-disabled" disabled>Sepia</button>
+                                <button class="filter-btn sepia-add btn btn-warning">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center my-4">
+                        <div class="col-md-4">
+                            <div class="btn-group btn-group-sm btn-block">
+                                <button class="btn btn-info btn-disabled" disabled></button>
+                                <button class="filter-btn btn btn-primary invert-add">Invert Image</button>
+                                <button class="btn btn-info btn-disabled" disabled></button>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="btn-group btn-group-sm btn-block">
+                                <button class="btn btn-info btn-disabled" disabled></button>
+                                <button class="filter-btn btn btn-primary greyscale-add">Greyscale Image</button>
+                                <button class="btn btn-info btn-disabled" disabled></button>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <h4 class="text-center my-3">Effects</h4>
 
@@ -74,7 +108,7 @@
                             <button class="filter-btn sincity-add btn btn-primary btn-block">Sin City</button>
                         </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row my-4">
                         <div class="col-md-3">
                             <button class="filter-btn crossprocess-add btn btn-primary btn-block">CrossProcess</button>
                         </div>
@@ -88,9 +122,23 @@
                             <button class="filter-btn hermajesty-add btn btn-primary btn-block">Her Majesty</button>
                         </div>
                     </div>
-                    <div class="row my-4">
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <button class="filter-btn crossprocess-add btn btn-primary btn-block">Old Boot</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="filter-btn pinhole-add btn btn-primary btn-block">Jarques</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="filter-btn nostalgia-add btn btn-primary btn-block">Hemingway</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="filter-btn hermajesty-add btn btn-primary btn-block">Concentrate</button>
+                        </div>
+                    </div>
+                    <div class="row my-5">
                         <div class="col-md-6">
-                            <button id="download-btn" class="btn btn-dark btn-block">Download Image</button>
+                            <button id="download-btn" class="btn btn-secondary btn-block">Download Image</button>
                         </div>
                         <div class="col-md-6">
                             <button id="revert-btn" class="btn btn-danger btn-block">Remove Filters</button>
